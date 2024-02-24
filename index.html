@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01d9059722.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Top Horizontal nav ------ -->
+    <nav>
+        <div class="nav-left">
+            <img src="assests/logo.png" class="logo">
+            <ul>
+                <li><img src="assests/notification.png"></li>
+                <li><img src="assests/inbox.png"></li>
+                <li><img src="assests/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+          <div class="search-box">
+            <img src="assests/search.png">
+            <input type="text" placeholder="Search">
+          </div>
+          <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+            <img src="assests/profile-pic.png">
+          </div>
+        </div>
+                  <!-- ===============setting--menu bar========= -->
+                <div class="setting-menu">
+                 
+                <!-- =============dark mode and normal mode======== -->
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+                     <div class="settings-menu-inner">
+                          <div class="user-profile">
+                              <img src="assests/profile-pic.png">
+                             <div>
+                                <p>John Nicholson</p>
+                                 <a href="#">See your profile</a>
+                             </div>
+                          </div>
+                          <hr>
+                   <!-- feeback feature in the below the menu bar -->
+                      <div class="user-profile">
+                            <img src="assests/feedback.png">
+                        <div>
+                           <p>Give Feedback</p>
+                           <a href="#">Help us to improve the new design</a>
+                        </div>
+                     </div>
+                     <hr>
+                  <!--make another features in settings icons-->
+                  <div class="settings-links">
+                      <img src="assests/setting.png" class="settings-icon">
+                      <a href="#">Settings & Privacy  
+                        <img src="assests/arrow.png" width="10px">
+                      </a>
+                  </div>
+                   <!-- make another features in setting icons help & support-->
+                  <div class="settings-links">
+                    <img src="assests/help.png" class="settings-icon">
+                    <a href="#">Help & Support
+                      <img src="assests/arrow.png" width="10px">
+                    </a>
+                  </div>
+
+                   <!-- make another features in setting icons Display & Accessibility====-->
+                   <div class="settings-links">
+                    <img src="assests/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility
+                      <img src="assests/arrow.png" width="10px">
+                    </a>
+                  </div>
+
+                   <!-- make another features in setting icons logout-->
+                   <div class="settings-links">
+                    <img src="assests/logout.png" class="settings-icon">
+                    <a href="#">Logout
+                      <img src="assests/arrow.png" width="10px">
+                    </a>
+                  </div>
+
+                 </div>
+                     
+                </div>
+    </nav>
+    <!-- main page -->
+    <div class="container">
+        <!-- left-sidebar container -->
+        <div class="left-sidebar">
+         <div class="imp-links">
+            <a href="#"><img src="assests/news.png">Latest New</a>
+            <a href="#"><img src="assests/friends.png">Friends</a>
+            <a href="#"><img src="assests/group.png">Group</a>
+            <a href="#"><img src="assests/marketplace.png">MarketPlace</a>
+            <a href="#"><img src="assests/watch.png">Watch</a>
+            <a href="#">See More</a>
+         </div>
+         <!-- =============Shortcut links======= -->
+         <div class="shortcut-links">
+            <p>Your Shortcuts</p>
+            <a href="#"><img src="assests/shortcut-1.png">Web Developers</a>
+            <a href="#"><img src="assests/shortcut-2.png">Web Design Course</a>
+            <a href="#"><img src="assests/shortcut-3.png">Full Stack Development</a>
+            <a href="#"><img src="assests/shortcut-4.png">Website Experts</a>
+         </div>
+        </div>
+        <!-- main-content------------- -->
+        <div class="main-content">
+          
+          <!--------- story-gallery--------- -->
+          <div class ="story-gallery">
+               <div class ="story story1">
+                  <img src="assests/upload.png">
+                  <p>Post Story</p>
+               </div>
+<!-- ================Story member---1 ===============-->
+               <div class ="story story2">
+                <img src="assests/member-1.png">
+                <p>Alison</p>
+             </div>
+<!-- =====================story member -2 ======= -->
+             <div class ="story story3">
+              <img src="assests/member-2.png">
+              <p>Jackson</p>
+           </div>
+            <!-- story member-3 -->
+           <div class ="story story4">
+            <img src="assests/member-3.png">
+            <p>Samona</p>
+            </div>
+           <!-- story member story-4 -->
+             <div class ="story  story5">
+                <img src="assests/member-4.png">
+                <p>John Doe</p>
+             </div>
+          </div>
+
+          <!-- write for the post-container -->
+          <div class="write-post-container">
+              <div class="user-profile">
+                  <img src="assests/profile-pic.png">
+                  <div>
+                    <p>John Nicholson</p>
+                    <small>Public <i class="fa-solid fa-sort-down"></i></small>
+                  </div>
+              </div>
+           
+              <div class="post-input-container">
+                          <!--feature for what your in mind -->
+                   <textarea rows="3" placeholder="what's on your mind, John?"></textarea>
+                           <!--feature for add post,live feelings  -->
+                    <div class="add-post-links">
+                       <a href="#"><img src="assests/live-video.png">Live Video</a>
+                       <a href="#"><img src="assests/photo.png">Photo/Video</a>
+                       <a href="#"><img src="assests/feeling.png">Feeling/Activity </a>
+                    </div>
+              </div>  
+          </div>
+        
+<!-- =================Post container--2============ -->
+             <div class ="post-container">
+              <!-- post row adding user profile -->
+              <div class="post-row">
+                    
+                    <div class="user-profile">
+                        <img src="assests/profile-pic.png">
+                       <div>
+                           <p>John Nicholson</p>
+                           <span>June 24 2022, 13:40 pm</span>
+                       </div>
+                   </div>
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              </div>
+                 
+                 <p class="post-text">Learn Update <span>Technology</span> try to implement in the real world projects make of use the open resources.
+                  <a href="#">#Technology</a>
+                 </p>
+                 <img src="assests/feed-image-1.png" class="post-img">
+
+                 <!--===========features for like comment activites=============== -->
+              
+                  <div class="post-row">
+                    <!-- ==========user activites icon -->
+                        <div class="activity-icons">
+                           <div><img src="assests/like-blue.png">120</div>
+                           <div><img src="assests/comments.png">65</div>
+                           <div><img src="assests/share.png">20</div>
+                        </div>
+                    <!-- post profile-icons -->
+                        <div class="post-profile-icon">
+                            <img src="assests/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                        </div>
+
+                  </div>
+
+             </div>
+
+         
+             <!-- =================Post container--3============ -->
+             <div class ="post-container">
+              <!-- post row adding user profile -->
+              <div class="post-row">
+                    
+                    <div class="user-profile">
+                        <img src="assests/profile-pic.png">
+                       <div>
+                           <p>John Nicholson</p>
+                           <span>June 24 2022, 13:40 pm</span>
+                       </div>
+                   </div>
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              </div>
+                 
+                 <p class="post-text">Enjoy your part with your friends<span>Travel all over the world</span> try to know all the cultures make new network with new people
+                  <a href="#">#Travel Party</a>
+                 </p>
+                 <img src="assests/feed-image-2.png" class="post-img">
+
+                 <!--===========features for like comment activites=============== -->
+              
+                  <div class="post-row">
+                    <!-- ==========user activites icon -->
+                        <div class="activity-icons">
+                           <div><img src="assests/like.png">420</div>
+                           <div><img src="assests/comments.png">55</div>
+                           <div><img src="assests/share.png">10</div>
+                        </div>
+                    <!-- post profile-icons -->
+                        <div class="post-profile-icon">
+                            <img src="assests/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                        </div>
+
+                  </div>
+
+             </div>
+
+             <!-- =================Post container--3============ -->
+             <div class ="post-container">
+              <!-- post row adding user profile -->
+              <div class="post-row">
+                    
+                    <div class="user-profile">
+                        <img src="assests/profile-pic.png">
+                       <div>
+                           <p>John Nicholson</p>
+                           <span>Julu 24 2022, 13:40 pm</span>
+                       </div>
+                   </div>
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              </div>
+                 
+                 <p class="post-text">Walking with our close member make it <span>peace</span> whatever problem in world true friends is enough to solve the problems
+                  <a href="#">#Peace</a>
+                 </p>
+                 <img src="assests/feed-image-3.png" class="post-img">
+
+                 <!--===========features for like comment activites=============== -->
+              
+                  <div class="post-row">
+                    <!-- ==========user activites icon -->
+                        <div class="activity-icons">
+                           <div><img src="assests/like-blue.png">145</div>
+                           <div><img src="assests/comments.png">55</div>
+                           <div><img src="assests/share.png">40</div>
+                        </div>
+                    <!-- post profile-icons -->
+                        <div class="post-profile-icon">
+                            <img src="assests/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                        </div>
+
+                  </div>
+
+             </div>
+                    
+                  <!-- =================Post container--4============ -->
+             <div class ="post-container">
+              <!-- post row adding user profile -->
+              <div class="post-row">
+                    
+                    <div class="user-profile">
+                        <img src="assests/profile-pic.png">
+                       <div>
+                           <p>John Nicholson</p>
+                           <span>october 24 2022, 13:40 pm</span>
+                       </div>
+                   </div>
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              </div>
+                 
+                 <p class="post-text">Learn Update <span>Technology</span> try to implement in the real world projects make of use the open resources.
+                  <a href="#">#Technology</a>
+                 </p>
+                 <img src="assests/feed-image-4.png" class="post-img">
+
+                 <!--===========features for like comment activites=============== -->
+              
+                  <div class="post-row">
+                    <!-- ==========user activites icon -->
+                        <div class="activity-icons">
+                           <div><img src="assests/like-blue.png">220</div>
+                           <div><img src="assests/comments.png">85</div>
+                           <div><img src="assests/share.png">70</div>
+                        </div>
+                    <!-- post profile-icons -->
+                        <div class="post-profile-icon">
+                            <img src="assests/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                        </div>
+
+                  </div>
+
+              </div>
+
+
+              <!-- =================Post container--5============ -->
+             <div class ="post-container">
+              <!-- post row adding user profile -->
+              <div class="post-row">
+                    
+                    <div class="user-profile">
+                        <img src="assests/profile-pic.png">
+                       <div>
+                           <p>John Nicholson</p>
+                           <span>December  2022, 13:40 pm</span>
+                       </div>
+                   </div>
+                   <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              </div>
+                 
+                 <p class="post-text">Today Team meeting awesome with colleges<span>New Project management</span> try to implement in the real world projects utilized senior support make a client to be as per required to make opporunities for growth of our company.
+                  <a href="#">#Project Management</a>
+                 </p>
+                 <img src="assests/feed-image-5.png" class="post-img">
+
+                 <!--===========features for like comment activites=============== -->
+              
+                  <div class="post-row">
+                    <!-- ==========user activites icon -->
+                        <div class="activity-icons">
+                           <div><img src="assests/like-blue.png">90</div>
+                           <div><img src="assests/comments.png">65</div>
+                           <div><img src="assests/share.png">5</div>
+                        </div>
+                    <!-- post profile-icons -->
+                        <div class="post-profile-icon">
+                            <img src="assests/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                        </div>
+
+                  </div>
+             </div>
+           <!-- ===============Add button for the features to load more==== -->
+            
+           <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+        <!--  right-sidebar container -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+          <!-- under the event1 and see all static data -->
+            <div class="event">
+                <div class="left-event">
+                  <h3>18</h3>
+                  <span>March</span>
+                </div>
+                <div class="right-event">
+                   <h4>Social Media</h4>
+                   <p><i class="fa-solid fa-location-dot" style="color: #f10943;"></i> Willson Tech Park</p>
+                   <a href="#">More Info</a>
+                </div>
+            </div>
+
+             <!-- under the event2 and see all static data -->
+             <div class="event">
+                <div class="left-event">
+                  <h3>22</h3>
+                  <span>June</span>
+                </div>
+                <div class="right-event">
+                   <h4>Mobile Marketing</h4>
+                   <p><i class="fa-solid fa-location-dot" style="color: #f10943;"></i> Willson Tech Park</p>
+                   <a href="#">More Info</a>
+                </div>
+            </div>
+           <!-- for the advertisment -->
+           <div class="sidebar-title">
+                <h4>Advertisment</h4>
+               <a href="#">Close</a>
+           </div>
+             <img src="assests/advertisement.png" class="sidebar-ads">
+
+             <!-- For the conversation -->
+             <div class="sidebar-title">
+                      <h4>Conversation</h4>
+                     <a href="#">Hide Chat</a>
+             </div>
+             <!-- memeber-1 -->
+             <div class="online-list">
+                <div class="online">
+                     <img src="assests/member-1.png">
+               </div>
+                <p> Alison Mina</p>
+           </div>
+           
+              <!-- memeber 2 -->
+              <div class="online-list">
+                <div class="online">
+                     <img src="assests/member-2.png">
+               </div>
+                <p> Jackson Aston</p>
+           </div>
+         
+                 <!-- memeber 3 -->
+                 <div class="online-list">
+                    <div class="online">
+                         <img src="assests/member-3.png">
+                   </div>
+                    <p> Samona Rose</p>
+               </div>
+
+                <!-- memeber 4 -->
+                <div class="online-list">
+                    <div class="online">
+                         <img src="assests/member-4.png">
+                   </div>
+                    <p> Smith</p>
+               </div>
+                   <!-- memeber 5 -->
+                 <div class="online-list">
+                    <div class="online">
+                         <img src="assests/member-5.png">
+                   </div>
+                    <p>Ricky Pointing</p>
+               </div>
+                 <!-- memeber 6 -->
+                 <div class="online-list">
+                    <div class="online">
+                         <img src="assests/member-6.png">
+                   </div>
+                    <p> Ailena </p>
+               </div>
+
+                 <!-- memeber 7 -->
+                 <div class="online-list">
+                    <div class="online">
+                         <img src="assests/member-7.png">
+                   </div>
+                    <p> Jack</p>
+               </div>
+
+                 <!-- memeber 8 -->
+                 <div class="online-list">
+                    <div class="online">
+                         <img src="assests/member-8.png">
+                   </div>
+                    <p> Jerrsy</p>
+               </div>
+                 
+               <!-- memeber 9 -->
+               <div class="online-list">
+                <div class="online">
+                     <img src="assests/member-9.png">
+               </div>
+                <p> John</p>
+           </div>
+
+        </div>
+
+
+        </div>
+        <div class="footer">
+             <p>Copyright @2024</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
